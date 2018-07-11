@@ -1,5 +1,10 @@
+
 #!/usr/bin/python
-import httplib, sys
+import httplib
+import sys
+from termcolor import colored 
+
+print colored ("welcome to my webchecker" + "!","blue", attrs=['bold'])  
 if len(sys.argv) < 3:sys.exit("Usage " + sys.argv[0] + " <hostname> <port>\n")
 
 host = sys.argv[1]
